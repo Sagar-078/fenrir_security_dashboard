@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer components {
+  .input-field {
+    @apply w-full px-5 py-4 rounded-xl border border-gray-200 dark:border-gray-700 
+           bg-transparent text-gray-900 dark:text-white placeholder-gray-400 
+           focus:outline-none focus:ring-2 focus:ring-[#0CC8A8]/20 focus:border-[#0CC8A8] 
+           transition-all text-sm;
+  }
+} */
+
+
+/* .custom-input {
+  @apply w-full px-5 py-3 rounded-xl border border-gray-100 bg-gray-50/30
+         text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 
+         focus:ring-[#0CC8A8]/10 focus:border-[#0CC8A8] focus:bg-white
+         transition-all text-sm;
+} */
+
+@layer components {
+  .custom-field {
+    @apply w-full px-5 py-3.5 rounded-xl border border-gray-100 bg-gray-50/50 
+           text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 
+           focus:ring-[#0CC8A8]/10 focus:border-[#0CC8A8] focus:bg-white 
+           transition-all text-sm;
+  }
+}
+
+
+@layer components {
+  .toolbar-btn {
+    @apply flex items-center gap-2 px-4 py-2.5 rounded-xl border border-gray-200 
+           dark:border-gray-800 text-sm font-medium dark:text-gray-300 
+           hover:bg-gray-50 dark:hover:bg-white/5 transition-all;
+  }
+}
+
+@layer base {
+  body {
+    @apply antialiased font-sans;
+  }
+}
+
+@layer components {
+  /* This specific shadow and radius makes it look like the reference */
+  .premium-card {
+    @apply bg-white dark:bg-[#0A0A0A] border border-gray-100 dark:border-[#1A1A1A] rounded-[24px] shadow-sm;
+  }
+  
+  .sidebar-link-active {
+    @apply bg-[#0CC8A8]/10 text-[#0CC8A8] border-r-2 border-[#0CC8A8];
+  }
+}
+
+@layer components {
+  .toolbar-btn {
+    @apply flex items-center gap-2 px-4 py-2.5 bg-white dark:bg-[#0D0D0D] 
+           border border-gray-100 dark:border-white/[0.05] rounded-xl 
+           text-sm font-bold text-gray-600 dark:text-gray-300 
+           hover:bg-gray-50 dark:hover:bg-white/5 transition-all shadow-sm;
+  }
+}
